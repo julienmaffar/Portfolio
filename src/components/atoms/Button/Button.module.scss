@@ -1,0 +1,19 @@
+@import "../../../styles/variables";
+
+.wrapper {
+  height: $spacer-block * 6;
+  border: none;
+  background-color: $color-sunburnt-cyclops;
+  border-radius: $radius-full;
+  padding-inline: $spacer-base * 3;
+  font-size: 16px;
+  color: $color-white;
+  cursor: pointer;
+  transition-duration: 0.2s;
+  font-family: inherit;
+}
+
+.wrapper:hover {
+  background-color: $color-watermelon-red;
+  transition-duration: 0.2s;
+}
