@@ -1,0 +1,16 @@
+@import "../../../styles/_variables.scss";
+
+.small {
+  height: $spacer-base * 3;
+  width: $spacer-base * 3;
+}
+
+.default {
+  height: $spacer-block * 5;
+  width: $spacer-block * 5;
+}
+
+.big {
+  height: $spacer-block * 10;
+  width: $spacer-block * 10;
+}
