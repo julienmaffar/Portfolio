@@ -1,0 +1,29 @@
+@import "./_variables.scss";
+@import "./_typography.scss";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.section {
+  background-color: aquamarine;
+  padding: $spacer-block * 14 $spacer-base * 18;
+  color: $color-white;
+
+  &.primary {
+    background-color: $color-dark-gunmetal;
+  }
+}
