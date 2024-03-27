@@ -1,0 +1,43 @@
+@import "../../../styles/_variables.scss";
+
+.container {
+  width: $spacer-block * 36;
+  height: $spacer-block * 33;
+  background-color: $color-dark-gunmetal;
+  border-radius: 20px;
+  padding-inline: $spacer-base * 3;
+  color: $color-white;
+  display: flex;
+  flex-direction: column;
+  gap: $spacer-base * 3;
+  justify-content: center;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+.container:hover {
+  background-color: $color-sunburnt-cyclops;
+  transition-duration: 0.2s;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  gap: $spacer-base * 2;
+}
+
+.title {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.subtitle {
+  height: $spacer-block * 8;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  font-size: 17px;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
