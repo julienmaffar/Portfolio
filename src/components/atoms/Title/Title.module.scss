@@ -1,0 +1,18 @@
+@import "../../../styles/_variables.scss";
+
+.container {
+  width: 100%;
+  font-size: 66px;
+  font-weight: bold;
+  color: $color-white;
+  text-align: center;
+}
+
+.line {
+  height: 3px;
+  background-color: $color-sunburnt-cyclops;
+  width: 100px;
+  transform: translateX(-50%);
+  margin-left: 50%;
+  margin-top: $spacer-block * 2;
+}
