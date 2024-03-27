@@ -1,7 +1,11 @@
+import { Title } from "@/components";
+
 const Home = () => {
   return (
     // About
     <div className='section primary'>
+      <Title title='A propos' />
+
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at
         vestibulum diam, <strong>ut dictum risus</strong>. Vivamus accumsan nibh
