@@ -1,0 +1,14 @@
+@import "../../../styles/_variables.scss";
+
+.container {
+  background-color: $color-dark-gunmetal;
+  padding: $spacer-block * 2.5;
+  border-radius: $radius;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+
+.container:hover {
+  background-color: $color-sunburnt-cyclops;
+  transition-duration: 0.2s;
+}
