@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import "./_variables.scss";
 @import "./_typography.scss";
 
@@ -18,12 +22,15 @@ a {
   text-decoration: none;
 }
 
-.section {
-  background-color: aquamarine;
+section {
   padding: $spacer-block * 14 $spacer-base * 18;
   color: $color-white;
 
   &.primary {
     background-color: $color-dark-gunmetal;
+  }
+
+  &.secondary {
+    background-color: $color-yankees-blue;
   }
 }
