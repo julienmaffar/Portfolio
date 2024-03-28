@@ -48,7 +48,7 @@ const Home = () => {
 
         <div
           className='flex flex-wrap justify-between mt-14'
-          style={{ gap: 36 }}>
+          style={{ gap: 44 }}>
           <ServiceCard
             firstIcon='next'
             secondIcon='react'
