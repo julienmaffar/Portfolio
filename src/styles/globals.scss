@@ -4,6 +4,7 @@
 
 @import "./_variables.scss";
 @import "./_typography.scss";
+@import "./_animations.scss";
 
 * {
   box-sizing: border-box;
@@ -33,4 +34,11 @@ section {
   &.secondary {
     background-color: $color-yankees-blue;
   }
+}
+
+.slider {
+  animation: scroll 25s linear infinite;
+  display: flex;
+  gap: $spacer-base * 3;
+  width: (150px + $spacer-base * 3) * 32;
 }

@@ -1,4 +1,4 @@
-import { ServiceCard, Title } from "@/components";
+import { ServiceCard, TechnologyCard, Title } from "@/components";
 
 const Home = () => {
   return (
@@ -81,6 +81,43 @@ const Home = () => {
             title='Design UX/UI'
             subtitle='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id justo tortor. Aenean vel ante ut tellus tempus tempus.'
           />
+        </div>
+      </section>
+
+      <section className='primary px-0'>
+        <div className='slider'>
+          <TechnologyCard icon='adonis' />
+          <TechnologyCard icon='laravel' />
+          <TechnologyCard icon='react' />
+          <TechnologyCard icon='wordpress' />
+          <TechnologyCard icon='redux' />
+          <TechnologyCard icon='css' />
+          <TechnologyCard icon='figma' />
+          <TechnologyCard icon='sass' />
+          <TechnologyCard icon='js' />
+          <TechnologyCard icon='github' />
+          <TechnologyCard icon='nest' />
+          <TechnologyCard icon='docker' />
+          <TechnologyCard icon='mysql' />
+          <TechnologyCard icon='mongodb' />
+          <TechnologyCard icon='html' />
+          <TechnologyCard icon='node' />
+          <TechnologyCard icon='adonis' />
+          <TechnologyCard icon='laravel' />
+          <TechnologyCard icon='react' />
+          <TechnologyCard icon='wordpress' />
+          <TechnologyCard icon='redux' />
+          <TechnologyCard icon='css' />
+          <TechnologyCard icon='figma' />
+          <TechnologyCard icon='sass' />
+          <TechnologyCard icon='js' />
+          <TechnologyCard icon='github' />
+          <TechnologyCard icon='nest' />
+          <TechnologyCard icon='docker' />
+          <TechnologyCard icon='mysql' />
+          <TechnologyCard icon='mongodb' />
+          <TechnologyCard icon='html' />
+          <TechnologyCard icon='node' />
         </div>
       </section>
     </div>
