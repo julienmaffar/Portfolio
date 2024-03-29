@@ -40,5 +40,7 @@ section {
   animation: scroll 25s linear infinite;
   display: flex;
   gap: $spacer-base * 3;
-  width: (150px + $spacer-base * 3) * 32;
+  width: calc(
+    calc(150px + $spacer-base * 3) * calc(var(--technologies-length) * 2)
+  );
 }

@@ -1,4 +1,25 @@
 import { ServiceCard, TechnologyCard, Title } from "@/components";
+import { IconType } from "@/components/atoms/Icon/type";
+import { CSSProperties } from "react";
+
+const technologies: IconType[] = [
+  "adonis",
+  "laravel",
+  "react",
+  "wordpress",
+  "redux",
+  "css",
+  "figma",
+  "sass",
+  "js",
+  "github",
+  "nest",
+  "docker",
+  "mysql",
+  "mongodb",
+  "html",
+  "node",
+];
 
 const Home = () => {
   return (
@@ -84,40 +105,20 @@ const Home = () => {
         </div>
       </section>
 
-      <section className='primary px-0'>
+      <section
+        className='primary px-0'
+        style={
+          {
+            "--technologies-length": technologies.length,
+          } as CSSProperties
+        }>
         <div className='slider'>
-          <TechnologyCard icon='adonis' />
-          <TechnologyCard icon='laravel' />
-          <TechnologyCard icon='react' />
-          <TechnologyCard icon='wordpress' />
-          <TechnologyCard icon='redux' />
-          <TechnologyCard icon='css' />
-          <TechnologyCard icon='figma' />
-          <TechnologyCard icon='sass' />
-          <TechnologyCard icon='js' />
-          <TechnologyCard icon='github' />
-          <TechnologyCard icon='nest' />
-          <TechnologyCard icon='docker' />
-          <TechnologyCard icon='mysql' />
-          <TechnologyCard icon='mongodb' />
-          <TechnologyCard icon='html' />
-          <TechnologyCard icon='node' />
-          <TechnologyCard icon='adonis' />
-          <TechnologyCard icon='laravel' />
-          <TechnologyCard icon='react' />
-          <TechnologyCard icon='wordpress' />
-          <TechnologyCard icon='redux' />
-          <TechnologyCard icon='css' />
-          <TechnologyCard icon='figma' />
-          <TechnologyCard icon='sass' />
-          <TechnologyCard icon='js' />
-          <TechnologyCard icon='github' />
-          <TechnologyCard icon='nest' />
-          <TechnologyCard icon='docker' />
-          <TechnologyCard icon='mysql' />
-          <TechnologyCard icon='mongodb' />
-          <TechnologyCard icon='html' />
-          <TechnologyCard icon='node' />
+          {technologies.map((technology) => (
+            <TechnologyCard key={technology} icon={technology} />
+          ))}
+          {technologies.map((technology) => (
+            <TechnologyCard key={`${technology}-1`} icon={technology} />
+          ))}
         </div>
       </section>
     </div>
