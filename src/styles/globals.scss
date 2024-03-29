@@ -36,6 +36,17 @@ section {
   }
 }
 
+footer {
+  height: $spacer-block * 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-dark-gunmetal;
+  color: $color-white;
+  font-size: 16px;
+  font-weight: 500;
+}
+
 .slider {
   animation: scroll 25s linear infinite;
   display: flex;

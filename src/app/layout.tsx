@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "@/styles/globals.scss";
+import { useMemo } from "react";
 
 const poppins = Poppins({
   weight: ["300", "400", "500", "600", "700"],
@@ -17,9 +18,17 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const actualYear = useMemo(() => new Date().getFullYear(), []);
+
   return (
     <html lang='fr'>
-      <body className={poppins.className}>{children}</body>
+      <body className={poppins.className}>
+        {children}
+
+        <footer>
+          Copyright © Julien Maffar - {actualYear} - Tous droits réservés
+        </footer>
+      </body>
     </html>
   );
 }
