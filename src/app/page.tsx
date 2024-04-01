@@ -1,27 +1,14 @@
-import { ServiceCard, TechnologyCard, Title } from "@/components";
-import { IconType } from "@/components/atoms/Icon/type";
-import { CSSProperties } from "react";
-
-const technologies: IconType[] = [
-  "adonis",
-  "laravel",
-  "react",
-  "wordpress",
-  "redux",
-  "css",
-  "figma",
-  "sass",
-  "js",
-  "github",
-  "nest",
-  "docker",
-  "mysql",
-  "mongodb",
-  "html",
-  "node",
-];
+import { ServiceCard, TechnologyCard, Title, WorkCard } from "@/components";
+import { CSSProperties, useMemo } from "react";
+import { technologies } from "@/data/technologies";
+import { works } from "@/data/works";
 
 const Home = () => {
+  const orderedWorks = useMemo(
+    () => works.sort((a, b) => a.order - b.order),
+    []
+  );
+
   return (
     <div>
       <section className='primary'>
@@ -118,6 +105,23 @@ const Home = () => {
           ))}
           {technologies.map((technology) => (
             <TechnologyCard key={`${technology}-1`} icon={technology} />
+          ))}
+        </div>
+      </section>
+
+      <section className='secondary'>
+        <Title title='Réalisations' />
+
+        <div className='grid grid-cols-3 mt-14' style={{ gap: 36 }}>
+          {orderedWorks.map((work) => (
+            <WorkCard
+              key={work.title}
+              picture={work.picture}
+              color={work.color}
+              title={work.title}
+              description={work.description}
+              fullwidth
+            />
           ))}
         </div>
       </section>
